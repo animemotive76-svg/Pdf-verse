@@ -10,7 +10,7 @@ interface AIAnalyzerProps {
 }
 
 export const AIAnalyzer: React.FC<AIAnalyzerProps> = ({ pdfFile, activeTool }) => {
-  const { text, isLoading: isTextLoading, error: textError }_ = usePdfText(pdfFile);
+  const { text, isLoading: isTextLoading, error: textError } = usePdfText(pdfFile);
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState('');
   const [question, setQuestion] = useState('');
